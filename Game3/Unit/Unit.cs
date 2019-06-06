@@ -122,7 +122,7 @@ namespace Game3
         {
             if (GameScene.IsStageMoving)
             {
-                if (HP < 0)
+                if (HP <= 0)
                     Dispose();
                 foreach (var obj in Layer.Objects)
                     CollideWith(obj as CollidableObject);
@@ -131,6 +131,10 @@ namespace Game3
                 if (HP >= MAXHP)
                 {
                     HP = MAXHP;
+                }
+                if(HP < 0)
+                {
+                    HP = 0;
                 }
                 HPlength = 50 * HP / MAXHP;
                 StartHPLine = Position - new asd.Vector2DF(25, 25);

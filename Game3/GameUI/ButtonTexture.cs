@@ -9,14 +9,15 @@ namespace Game3
     class ButtonTexture : asd.TextureObject2D
     {
         //元画像
-        protected String texture = "";
+        protected String TexturePath = "";
         protected int TextureNum = 0;
         private asd.SoundSource Click;
-        public ButtonTexture(asd.Vector2DF pos)
+        public ButtonTexture(asd.Vector2DF pos, int textureNum, string path)
         {
             Click = asd.Engine.Sound.CreateSoundSource("Click2.wav", true);
-            //画像位置はGameSceneで
-            Texture = asd.Engine.Graphics.CreateTexture2D(texture);
+            TexturePath = path;
+            TextureNum = textureNum;
+            Texture = asd.Engine.Graphics.CreateTexture2D(TexturePath);
             Position = pos;
         }
         protected override void OnUpdate()

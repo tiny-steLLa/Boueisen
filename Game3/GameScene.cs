@@ -116,18 +116,18 @@ namespace Game3
             GameLayer.AddObject(ClickSystem);
             BackLayer.AddObject(Background);
             UILayer.AddObject(new PlayerHP());
-            UILayer.AddObject(new SnowmanTexture(new asd.Vector2DF(600, 0)));
-            UILayer.AddObject(new SalarymanTexture(new asd.Vector2DF(700, 0)));
-            UILayer.AddObject(new DogTexture(new asd.Vector2DF(600, 100)));
-            UILayer.AddObject(new StrongDogTexture(new asd.Vector2DF(700, 100)));
-            UILayer.AddObject(new HumanTexture(new asd.Vector2DF(600, 200)));
-            UILayer.AddObject(new Human3WayTexture(new asd.Vector2DF(700, 200)));
-            UILayer.AddObject(new KinokoTexture(new asd.Vector2DF(600, 300)));
-            UILayer.AddObject(new PoisonKinokoTexture(new asd.Vector2DF(700, 300)));
-            UILayer.AddObject(new KirakiraTexture(new asd.Vector2DF(600, 400)));
-            UILayer.AddObject(new FlowerTexture(new asd.Vector2DF(700, 400)));
-            UILayer.AddObject(new WallTexture(new asd.Vector2DF(600, 500)));
-            UILayer.AddObject(new StrongWallTexture(new asd.Vector2DF(700, 500)));
+            UILayer.AddObject(new ButtonTexture(new asd.Vector2DF(600, 0), 0, "1509886607944.png"));
+            UILayer.AddObject(new ButtonTexture(new asd.Vector2DF(700, 0), 1, "1509885962687.png"));
+            UILayer.AddObject(new ButtonTexture(new asd.Vector2DF(600, 100), 2, "1509882889252.png"));
+            UILayer.AddObject(new ButtonTexture(new asd.Vector2DF(700, 100), 3, "1509888733365.png"));
+            UILayer.AddObject(new ButtonTexture(new asd.Vector2DF(600, 200), 4, "1509884775448.png"));
+            UILayer.AddObject(new ButtonTexture(new asd.Vector2DF(700, 200), 5, "1509888645166.png"));
+            UILayer.AddObject(new ButtonTexture(new asd.Vector2DF(600, 300), 6, "1509883808660.png"));
+            UILayer.AddObject(new ButtonTexture(new asd.Vector2DF(700, 300), 7, "1509883676004.png"));
+            UILayer.AddObject(new ButtonTexture(new asd.Vector2DF(600, 400), 8, "1509885496761.png"));
+            UILayer.AddObject(new ButtonTexture(new asd.Vector2DF(700, 400), 9, "1509875815401.png"));
+            UILayer.AddObject(new ButtonTexture(new asd.Vector2DF(600, 500), 10, "WallTexture.png"));
+            UILayer.AddObject(new ButtonTexture(new asd.Vector2DF(700, 500), 11, "YellowWallTexture.png"));
             initAllStage();
         }
 
