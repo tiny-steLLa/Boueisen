@@ -16,7 +16,7 @@ namespace Game3
         {
             Status.Load();
 
-            asd.Engine.Initialize("nyangame", 800, 800, new asd.EngineOption());
+            asd.Engine.Initialize("boueisen", 800, 800, new asd.EngineOption());
 
             asd.Engine.File.AddRootDirectory("resource/");
 
